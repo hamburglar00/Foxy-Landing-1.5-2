@@ -2,11 +2,11 @@
 export default async function handler(req, res) {
   try {
     const AGENCIES = [
-      { id: 2, name: "Foxy" }
+      { id: 1, name: "Foxy" }
     ];
 
     const randomAgency = AGENCIES[Math.floor(Math.random() * AGENCIES.length)];
-    const API_URL = `https://api.asesadmin.com/api/v1/agency/${randomAgency.id}/random-phone`;
+    const API_URL = `https://api.foxyadminbot.info/api/v1/agency/${randomAgency.id}/random-phone`;
 
     // 🔁 Intentamos hasta 2 veces
     let phone = null, lastError = null;
